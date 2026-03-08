@@ -1,0 +1,8 @@
+kya-agent>=0.2.0
+
+[dev]
+pytest>=7.0
+pyautogen>=0.2.0
+
+[signing]
+cryptography>=41.0

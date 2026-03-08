@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autogen-kya"
+version = "0.1.0"
+description = "KYA (Know Your Agent) identity verification for Microsoft AutoGen agents"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    {name = "LuciferForge", email = "LuciferForge@proton.me"},
+]
+keywords = ["autogen", "kya", "agent-identity", "know-your-agent", "ai-safety", "verification"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "kya-agent>=0.2.0",
+]
+
+[project.optional-dependencies]
+signing = ["cryptography>=41.0"]
+dev = ["pytest>=7.0", "pyautogen>=0.2.0"]
+
+[project.urls]
+Homepage = "https://github.com/LuciferForge/autogen-kya"
+Repository = "https://github.com/LuciferForge/autogen-kya"
+Issues = "https://github.com/LuciferForge/autogen-kya/issues"
+
+[tool.setuptools.packages.find]
+include = ["autogen_kya*"]

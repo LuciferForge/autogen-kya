@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: autogen-kya
+Version: 0.1.0
+Summary: KYA (Know Your Agent) identity verification for Microsoft AutoGen agents
+Author-email: LuciferForge <LuciferForge@proton.me>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/LuciferForge/autogen-kya
+Project-URL: Repository, https://github.com/LuciferForge/autogen-kya
+Project-URL: Issues, https://github.com/LuciferForge/autogen-kya/issues
+Keywords: autogen,kya,agent-identity,know-your-agent,ai-safety,verification
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: kya-agent>=0.2.0
+Provides-Extra: signing
+Requires-Dist: cryptography>=41.0; extra == "signing"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pyautogen>=0.2.0; extra == "dev"
